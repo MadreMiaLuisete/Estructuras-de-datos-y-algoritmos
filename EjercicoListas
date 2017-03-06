@@ -83,3 +83,6 @@ void visualiza(sensores variable){
     printf(" Fecha: %d/%d/%d \n", variable.dia, variable.mes, variable.year);
     printf("\t\tTempuratura:%f  Humedad:%f  Presion:%f  Precipitaciones:%f ", variable.temp, variable.humd, variable.pres, variable.lluv );
 }
+
+printf ("Hello World");
+printf ("Hola mundo");
