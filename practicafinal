@@ -75,6 +75,14 @@ closedir (dir);
 
 
   do {
+    printf("0. Salir.\n ");
+    printf("1. Avanzar: muestra la siguiente imagen.\n ");
+    printf("2. Retroceder: muestra la imagen anterior.\n ");
+    printf("3. Borrar: elimina la imagen que se esté mostrando actualmente y visualiza el nombre de la imagen siguiente.\n ");
+    printf("4. Limpiar: elimina todas las imágenes de la lista.\n");
+    printf("5. Cargar: carga la lista doblemente enlazada circular con las imágenes almacenadas en el directorio que se indique.\n");
+    printf("Elija una opcion: \n");
+    scanf("%d", &menu);
 
       switch (menu) {
         case 1:
@@ -87,7 +95,11 @@ closedir (dir);
 
               break;
         case 4:
-              printf("Saliendo del programa\n");
+              
+              break;
+
+        case 5: 
+
               break;
         default:
 
@@ -97,8 +109,10 @@ closedir (dir);
       }
 
 
-  } while(menu == 4);
-  return 0;
+  } while(menu != 0);
+    printf("Saliendo del programa...\n");
+    system ("pause");
+    return 0;
 }//MAIN
 
 
@@ -198,4 +212,3 @@ void eliminarTodo(nodo *nuevoNodo, nodo *ptrFinal,nodo *ptrCabecera){
       }
     }
   }
-
